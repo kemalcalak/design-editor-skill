@@ -697,3 +697,12 @@ U(c3+"/0", {"name":"GitBranchIcon"})
 U(c3+"/1", {"content":"Git-Native Workflow"})
 U(c3+"/2", {"content":"Preview deploys on every push with instant rollback."})
 ```
+
+## Companion skills
+
+This repo also bundles design and video skills written for web code. Use them for their judgment, and do the building on the canvas:
+
+- **Design direction** (`design-dna`, `frontend-design`, `design-taste-frontend`, `high-end-visual-design`, `minimalist-ui`, `industrial-brutalist-ui`, `impeccable`): take the palette, type, spacing and anti-template rules; express them as PenNode fills, text styles and layout through `batch_design`. Skip their Tailwind/React/CSS steps.
+- **DESIGN.md** (`awesome-design-md`, `stitch-design-taste`): write the `DESIGN.md`, then load it with `set_design_md` so variables and typography land in the document.
+- **Video** (`hyperframes` and its family, `remotion-motion-graphics`): export finished frames with `export_frames` (PNG) and use them as assets in the composition.
+- Verify every canvas step with `get_screenshot`, as these skills ask you to verify their own output.
