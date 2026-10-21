@@ -1,0 +1,23 @@
+{
+  "name": "design-editor-skill",
+  "displayName": "Design Editor Design",
+  "description": "Design skill for Design Editor — de CLI, batch DSL, MCP tools, PenNode schema, and UI design best practices",
+  "version": "0.1.0",
+  "author": {
+    "name": "Ali Kemal Çalak",
+    "email": "117113383+kemalcalak@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/kemalcalak/design-editor-skill",
+  "repository": "https://github.com/kemalcalak/design-editor-skill",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "ui",
+    "vector",
+    "design-editor",
+    "cli",
+    "mcp",
+    "dsl"
+  ],
+  "skills": "./skills/"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "design-editor-skill",
+  "description": "Design skill for Design Editor — de CLI, batch DSL, MCP tools, and UI best practices",
+  "version": "0.1.0",
+  "contextFileName": "GEMINI.md"
+}

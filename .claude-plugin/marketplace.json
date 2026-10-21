@@ -1,0 +1,20 @@
+{
+  "name": "design-editor-skill",
+  "description": "Design skill for Design Editor — de CLI, batch DSL, MCP tools, and UI best practices",
+  "owner": {
+    "name": "Ali Kemal Çalak",
+    "email": "117113383+kemalcalak@users.noreply.github.com"
+  },
+  "plugins": [
+    {
+      "name": "design-editor-skill",
+      "description": "Design skill for Design Editor — de CLI, batch DSL, MCP tools, PenNode schema, and UI design best practices",
+      "version": "0.1.0",
+      "source": "./",
+      "author": {
+        "name": "Ali Kemal Çalak",
+        "email": "117113383+kemalcalak@users.noreply.github.com"
+      }
+    }
+  ]
+}
