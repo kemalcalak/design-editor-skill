@@ -74,7 +74,7 @@ de styles [<id>] [--tag T] [--platform P]   # List style guides: shipped corpus 
 
 # Export & delivery
 de export [--item ID|--selection] --output PATH [--format png|jpeg|webp|pdf] [--scale N]
-de export-deck --output PATH [--format pptx|html|pdf]   # Active page's boards as a deck
+de export-deck --output PATH [--format pptx|html|pdf|hyperframes]   # Active page's boards as a deck (hyperframes: PATH is a directory)
 de export-frames --output-dir DIR [--format png|jpeg|webp]  # One image per top-level frame
 
 # Import
@@ -469,7 +469,7 @@ what you would export.
 | Goal | MCP Tool | CLI Equivalent |
 |------|----------|----------------|
 | One node / page / selection | `export_item`, `export_nodes` | `de export --output PATH --format png\|pdf` |
-| A presentation deck | `export_deck` | `de export-deck --output PATH --format pptx\|html\|pdf` |
+| A presentation deck | `export_deck` | `de export-deck --output PATH --format pptx\|html\|pdf\|hyperframes` |
 | Every frame on the page | `export_frames` | `de export-frames --output-dir DIR` |
 | Check a deck before writing it | `get_deck_boards` | — |
 
@@ -704,5 +704,5 @@ This repo also bundles design and video skills written for web code. Use them fo
 
 - **Design direction** (`design-dna`, `frontend-design`, `design-taste-frontend`, `high-end-visual-design`, `minimalist-ui`, `industrial-brutalist-ui`, `impeccable`): take the palette, type, spacing and anti-template rules; express them as PenNode fills, text styles and layout through `batch_design`. Skip their Tailwind/React/CSS steps.
 - **DESIGN.md** (`awesome-design-md`, `stitch-design-taste`): write the `DESIGN.md`, then load it with `set_design_md` so variables and typography land in the document.
-- **Video** (`hyperframes` and its family, `remotion-motion-graphics`): export finished frames with `export_frames` (PNG) and use them as assets in the composition.
+- **Video** (`hyperframes` and its family, `remotion-motion-graphics`): turn a deck into a HyperFrames composition with `export_deck { format: "hyperframes", outputPath: <dir> }`. It writes `index.html` + `RENDER.md` into the directory (one timed scene per visible board; an `.html` path is refused) and returns `compositionPath`, `renderNotesPath`, `durationSeconds`, `fps`, `width` and `height`; render it with `npx hyperframes render <dir>`. To build the motion by hand, or for Remotion, export finished frames with `export_frames` (PNG) and use them as assets in the composition.
 - Verify every canvas step with `get_screenshot`, as these skills ask you to verify their own output.
